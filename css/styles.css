@@ -1,0 +1,65 @@
+.wrapper {
+  width: 500px;
+  height: 300px;
+  margin: auto;
+  background-image: url("../eye-down.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 200px;
+}
+
+.eyes-up {
+  background-image: url("../photo_2020-12-06_16-30-15.jpg");
+}
+
+.eyes-downing {
+  background-image: url("../eye-downing.jpg");
+}
+
+.wrapper.eyes-up {
+  animation-name: slide-down;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.wrapper.eyes-downing {
+  animation-name: slide-downing;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.wrapper.downed {
+  animation-name: slide-downed;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-downing {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes slide-downed {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: none;
+  }
+}
